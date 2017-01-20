@@ -7,6 +7,7 @@ $(function() {
     success : function(response){
       for (var badge of response.courses.completed) {
         $("#badges").append("<div class = course></div>");
+        this.find('.course').append('<h3>'+badge.title+'</h3>');
       }
     }
   });
