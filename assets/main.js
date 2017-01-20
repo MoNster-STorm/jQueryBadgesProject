@@ -8,8 +8,8 @@ $(function() {
       for (var badge of response.courses.completed) {
         var badges = $("#badges");
         badges.append("<div></div>");
-        badges.find("div").addClass("course");
-        badges.find(".course").append("<h3>"+badge.title+"</h3>");
+        badges.find("div:last").addClass("course");
+        badges.find(".course:last").append("<h3>"+badge.title+"</h3>");
       }
     }
   });
