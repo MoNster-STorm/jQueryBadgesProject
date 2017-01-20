@@ -17,6 +17,7 @@ $(function() {
         badgeButton.attr('href',badge.url);
         badgeButton.attr('target','_blank');
         badgeButton.addClass('btn btn-primary');
+        badgeButton.html("See Course");
         badges.find(".course:last").append(badgeButton);
       }
     }
