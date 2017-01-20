@@ -4,7 +4,7 @@ $(function() {
   jQuery.ajax({
     url :'https://www.codeschool.com/users/2760097.json',
     dataType:'jsonp',
-    success : function(){
+    success : function(response){
       for (var badge of response.courses.completed) {
         $("#badegs").appendTo("<div class = course>"+badge+"</div>");
       }
