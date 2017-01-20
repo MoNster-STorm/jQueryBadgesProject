@@ -9,7 +9,7 @@ $(function() {
         var badges = $("#badges");
         badges.append("<div></div>");
         badges.find("div").addClass("course");
-        badges.find(".class").append("<h3>"+badge.title+"</h3>");
+        badges.find(".course").append("<h3>"+badge.title+"</h3>");
       }
     }
   });
