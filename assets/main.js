@@ -4,11 +4,11 @@ $(function() {
   jQuery.ajax({
     url :'https://www.codeschool.com/users/2760097.json',
     dataType:'jsonp',
-    success : function({
-      for (badge of response.courses.completed) {
+    success : function(){
+      for (var badge of response.courses.completed) {
         $("#badegs").appendTo("<div class = course>"+badge+"</div>");
       }
-    })
+    };
   });
 
 });
