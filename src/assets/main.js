@@ -13,6 +13,10 @@ $(function() {
         var badgeImage = $('<img />');
         badgeImage.attr('src',badge.badge);
         badges.find(".course:last").append(badgeImage);
+        var badgeButton = $('<a />');
+        badgeButton.attr('href',badge.url);
+        badgeButton.attr('target','_blank');
+        badgeButton.addClass('btn btn-primary');
       }
     }
   });
