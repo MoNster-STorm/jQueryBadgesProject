@@ -10,6 +10,9 @@ $(function() {
         badges.append("<div></div>");
         badges.find("div:last").addClass("course");
         badges.find(".course:last").append("<h3>"+badge.title+"</h3>");
+        var badgeImage = $('<img />');
+        badgeImage.attr('src',badge.badge);
+        badges.find(".course:last").append(badgeImage);
       }
     }
   });
