@@ -8,7 +8,7 @@ $(function() {
       for (var badge of response.courses.completed) {
         $("#badegs").appendTo("<div class = course>"+badge+"</div>");
       }
-    };
+    }
   });
 
 });
