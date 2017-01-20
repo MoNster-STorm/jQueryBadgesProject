@@ -6,10 +6,10 @@ $(function() {
     dataType:'jsonp',
     success : function(response){
       for (var badge of response.courses.completed) {
-        var this = $("#badges");
-        this.append("<div></div>");
-        this.find("div").addClass("course");
-        this.find(".class").append("<h3>"+badge.title+"</h3>");
+        var badges = $("#badges");
+        badges.append("<div></div>");
+        badges.find("div").addClass("course");
+        badges.find(".class").append("<h3>"+badge.title+"</h3>");
       }
     }
   });
